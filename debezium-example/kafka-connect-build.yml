@@ -5,7 +5,7 @@ metadata:
   annotations:
     strimzi.io/use-connector-resources: "true"
 spec:
-  version: 3.1.0
+  version: 3.9.0
   replicas: 1
   bootstrapServers: debezium-cluster-kafka-bootstrap:9092
   config:
@@ -27,11 +27,11 @@ spec:
       - name: debezium-mysql-connector
         artifacts:
           - type: tgz
-            url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/2.1.1.Final/debezium-connector-mysql-2.1.1.Final-plugin.tar.gz
-            sha512sum: e8f0cdfb2f2c15d8c4685bc4736fd1a94f80bda0327dd02e771a10c8d285b4b8c1e17e7c583b55a174cb375ccd047156e67de44cdb50c7634a5710d7f60f6049
+            url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/3.0.7.Final/debezium-connector-mysql-3.0.7.Final-plugin.tar.gz
+            sha512sum: 569d7f511b9438dcbc6114576470a68e6b32ca6b15773965a2d6fa249cd5f03b00de53beacc2a091493dbed37378e787306da3c48730fa929bf7a0728822b3e7
       - name: debezium-postgres-connector
         artifacts:
           - type: zip
-            url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-postgres/2.1.1.Final/debezium-connector-postgres-2.1.1.Final-plugin.zip
-            sha512sum: a647a5c4ada510ba521ecdbdc789c01ee73675bb9a97dbf45d0f70251be778360aa52de62b60f8f2791f875d95e7793cad96c5dcddb911c2cea79ea40e85fbe4
+            url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-postgres/3.0.7.Final/debezium-connector-postgres-3.0.7.Final-plugin.zip
+            sha512sum: 70f17fb239c33bbdf48edb3ad1390c247b5d92d6a13ef2dc4a379001b15795751e116177a003188bcaa28751935c7d5732e785a7b68e9887b45f2fe23e3e5bc8
             
