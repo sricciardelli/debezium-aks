@@ -22,8 +22,7 @@ spec:
   build:
     output:
       type: docker
-      image: anhcr.azurecr.io/debezium-connect-cluster-image:latest
-      pushSecret: anhcr-secret
+      image: k8rwwetecx001debeziumpoc.azurecr.io/debezium-connect-cluster-image:latest
     plugins:
       - name: debezium-mysql-connector
         artifacts:
