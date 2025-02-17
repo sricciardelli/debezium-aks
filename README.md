@@ -21,6 +21,8 @@ kubectl get pod -n kafka
 1. Deploy kafka-connect resource
 ```bash
 kubectl create -n kafka -f kafka-connect-build.yml
+# Wait until kafka cluster ready 
+kubectl wait kafkaconnect/debezium-connect-cluster --for=condition=Ready --timeout=300s -n kafka
 ```
 
 1. Validate the kafka connect cluster
